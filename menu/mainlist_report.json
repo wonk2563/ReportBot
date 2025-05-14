@@ -1,0 +1,98 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "回報選單",
+        "size": "3xl",
+        "align": "center"
+      }
+    ]
+  },
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "separator",
+        "margin": "xs"
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "休假回報（夜間回報）",
+              "data": "set-nightReport",
+              "displayText": "休假回報"
+            },
+            "style": "secondary"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "專車回報",
+              "data": "set-busReport",
+              "displayText": "專車回報"
+            },
+            "style": "secondary"
+          }
+        ],
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "休假規劃",
+              "data": "set-vacationReport",
+              "displayText": "休假規劃"
+            },
+            "style": "secondary"
+          }
+        ],
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "收假回報",
+              "data": "set-closeReport",
+              "displayText": "收假回報"
+            },
+            "style": "secondary"
+          }
+        ],
+        "margin": "lg"
+      }
+    ]
+  }
+}

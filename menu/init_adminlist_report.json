@@ -1,0 +1,47 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "管理員設定",
+        "size": "3xl",
+        "align": "center"
+      }
+    ]
+  },
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "separator",
+        "margin": "xs"
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "設定為管理員",
+              "data": "setadmin",
+              "displayText": "設定為管理員"
+            },
+            "style": "secondary"
+          }
+        ]
+      }
+    ]
+  }
+}

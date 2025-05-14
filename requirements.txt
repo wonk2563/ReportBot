@@ -1,0 +1,7 @@
+uvicorn==0.34.2
+requests==2.31.0
+line-bot-sdk==3.7.0
+fastapi==0.106.0
+apscheduler==3.11.0
+dotenv
+termcolor

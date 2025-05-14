@@ -1,0 +1,209 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "設定選單",
+        "size": "3xl",
+        "align": "center",
+        "contents": []
+      },
+      {
+        "type": "text",
+        "text": "請點選目前的班級",
+        "align": "center",
+        "style": "italic"
+      }
+    ]
+  },
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "separator",
+        "margin": "xs"
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "button",
+                "action": {
+                    "type": "postback",
+                    "label": "第一班",
+                    "data": "1-第一班-setclass",
+                    "displayText": "第一班"
+                },
+                "style": "secondary"
+            }
+        ],
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "button",
+                "action": {
+                    "type": "postback",
+                    "label": "第二班",
+                    "data": "2-第二班-setclass",
+                    "displayText": "第二班"
+                },
+                "style": "secondary"
+            }
+        ],
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "button",
+                "action": {
+                    "type": "postback",
+                    "label": "第三班",
+                    "data": "3-第三班-setclass",
+                    "displayText": "第三班"
+                },
+                "style": "secondary"
+            }
+        ],
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "button",
+                "action": {
+                    "type": "postback",
+                    "label": "第四班",
+                    "data": "4-第四班-setclass",
+                    "displayText": "第四班"
+                },
+                "style": "secondary"
+            }
+        ],
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "button",
+                "action": {
+                    "type": "postback",
+                    "label": "第五班",
+                    "data": "5-第五班-setclass",
+                    "displayText": "第五班"
+                },
+                "style": "secondary"
+            }
+        ],
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "button",
+                "action": {
+                    "type": "postback",
+                    "label": "第六班",
+                    "data": "6-第六班-setclass",
+                    "displayText": "第六班"
+                },
+                "style": "secondary"
+            }
+        ],
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "button",
+                "action": {
+                    "type": "postback",
+                    "label": "第七班",
+                    "data": "7-第七班-setclass",
+                    "displayText": "第七班"
+                },
+                "style": "secondary"
+            }
+        ],
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "button",
+                "action": {
+                    "type": "postback",
+                    "label": "第八班",
+                    "data": "8-第八班-setclass",
+                    "displayText": "第八班"
+                },
+                "style": "secondary"
+            }
+        ],
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "button",
+                "action": {
+                    "type": "postback",
+                    "label": "第九班",
+                    "data": "9-第九班-setclass",
+                    "displayText": "第九班"
+                },
+                "style": "secondary"
+            }
+        ],
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "button",
+                "action": {
+                    "type": "postback",
+                    "label": "第十班",
+                    "data": "10-第十班-setclass",
+                    "displayText": "第十班"
+                },
+                "style": "secondary"
+            }
+        ],
+        "margin": "lg"
+      }
+    ],
+    "margin": "none"
+  }
+}

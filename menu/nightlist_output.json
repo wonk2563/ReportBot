@@ -1,0 +1,64 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "休假回報輸出",
+        "size": "3xl",
+        "align": "center"
+      }
+    ]
+  },
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "separator",
+        "margin": "xs"
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "未回報人員",
+              "data": "get-nightNonReport",
+              "displayText": "未回報人員"
+            },
+            "style": "secondary"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "回報統計",
+              "data": "get-nightTotalReport",
+              "displayText": "回報統計"
+            },
+            "style": "secondary"
+          }
+        ],
+        "margin": "lg"
+      }
+    ]
+  }
+}

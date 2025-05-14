@@ -1,0 +1,39 @@
+{
+    "type": "bubble",
+    "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "text",
+                "text": "\u65b0\u589e\u7ba1\u7406\u54e1\u9078\u55ae",
+                "size": "3xl",
+                "align": "center",
+                "contents": []
+            },
+            {
+                "type": "text",
+                "text": "\u8acb\u9ede\u9078\u8981\u65b0\u589e\u70ba\u7ba1\u7406\u54e1\u7684\u5b78\u865f\u8207\u59d3\u540d",
+                "align": "center",
+                "style": "italic"
+            }
+        ]
+    },
+    "hero": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+            {
+                "type": "separator",
+                "margin": "xs"
+            }
+        ]
+    },
+    "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+        ],
+        "margin": "none"
+    }
+}
