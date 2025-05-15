@@ -86,7 +86,7 @@ cp .env.example .env
 {
     "116": {
         "uid": "",
-        "name": "\u5468\u5fd7\u9060",
+        "name": "周志遠",
         "nightReport": "",
         "vacationReport": "",
         "closeReport": "",
@@ -95,7 +95,7 @@ cp .env.example .env
     },
     "117": {
         "uid": "",
-        "name": "\u6797\u660e\u6770",
+        "name": "林明杰",
         "nightReport": "",
         "vacationReport": "",
         "closeReport": "",
@@ -104,7 +104,7 @@ cp .env.example .env
     },
     "118": {
         "uid": "",
-        "name": "\u5f35\u5bb6\u8c6a",
+        "name": "張家豪",
         "nightReport": "",
         "vacationReport": "",
         "closeReport": "",
@@ -171,6 +171,7 @@ python bot_async.py
 <br>
 
 ### 輸出選單說明
+輸出選單可以依據選擇的項目，輸出未回報人員、已回報統計<br>
 ![](readme_image/13.png)
 <br>
 
@@ -190,8 +191,8 @@ python bot_async.py
 
 4. 每週日晚上 23:00 時自動將休假規劃資料清空<br>
 
-相關設定請參考 [schedule.py](handlers/jobhandler.py) 檔案
-
+相關設定請參考 [jobhandler.py](handlers/jobhandler.py) 檔案
+<br>
 
 ## 授權協議
 
