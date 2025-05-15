@@ -39,47 +39,47 @@ async def ReadAllFromJSON(fileName:str):
 # 將資料複寫進JSON
 # WriteToJSON("xx.json",ID,data)
 async def WriteToJSON(fileName:str,dataName:str,data):
-    with open(fileName,mode='r',encoding='utf8') as fileR:
+    with open(fileName, mode='r',encoding='utf8') as fileR:
         dataR = json.load(fileR)
         dataR[dataName] = data
-    with open(fileName,mode='w') as fileW:
-        json.dump(dataR,fileW,indent=4,ensure_ascii=True)
+    with open(fileName, mode='w', encoding='utf8') as fileW:
+        json.dump(dataR,fileW,indent=4,ensure_ascii=False)
         fileW.close()
                 
 # 將資料複寫進 JSON 與輸入 uid 相同的資料
 # WriteToJSONwithID("xx.json",ID,data)
 async def WriteToJSONwithUID(fileName:str,UID:str,data):
-    with open(fileName,mode='r',encoding='utf8') as fileR:
+    with open(fileName, mode='r',encoding='utf8') as fileR:
         dataR = json.load(fileR)
         fileR.close()
         for key in dataR.keys():
             if dataR[key]['uid'] == UID:
                 dataR[key] = data
-    with open(fileName,mode='w') as fileW:
-        json.dump(dataR,fileW,indent=4,ensure_ascii=True)
+    with open(fileName, mode='w', encoding='utf8') as fileW:
+        json.dump(dataR,fileW,indent=4,ensure_ascii=False)
         fileW.close()
 
 
 # 將資料從JSON中移除
 # RemoveFromJSON("xx.json",ID)
 async def RemoveFromJSON(fileName:str,dataName:str):
-    with open(fileName,mode='r',encoding='utf8') as fileR:
+    with open(fileName, mode='r',encoding='utf8') as fileR:
         dataR = json.load(fileR)
         fileR.close()
         del dataR[dataName]
-    with open(fileName,mode='w') as fileW:
-        json.dump(dataR,fileW,indent=4,ensure_ascii=True)
+    with open(fileName, mode='w', encoding='utf8') as fileW:
+        json.dump(dataR,fileW,indent=4,ensure_ascii=False)
         fileW.close()
                 
 # 將JSON中的特定資料設為空白
 # SetDataEmptyJSON("xx.json",ID)
 async def SetDataEmptyJSON(fileName:str,dataName:str):
-    with open(fileName,mode='r',encoding='utf8') as fileR:
+    with open(fileName, mode='r',encoding='utf8') as fileR:
         dataR = json.load(fileR)
         fileR.close()
         dataR[dataName] = ""
-    with open(fileName,mode='w') as fileW:
-        json.dump(dataR,fileW,indent=4,ensure_ascii=True)
+    with open(fileName, mode='w', encoding='utf8') as fileW:
+        json.dump(dataR,fileW,indent=4,ensure_ascii=False)
         fileW.close()
 
 
