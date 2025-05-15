@@ -55,6 +55,7 @@ async def handle_event(event):
                 case '輸出uid':
                     result = await datahandler.Output_Uid()
                     await LineAPI().ReplytoUser(event.reply_token, result)
+                    await LineAPI().LinkRichMenuToUser(uid, menu_ids["admin"])
 
                 case '設定':
                     menu_ids = await datahandler.ReadAllFromJSON("rich_menu_ids.json")
