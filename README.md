@@ -1,4 +1,4 @@
-## 這是我在當兵期間寫的一個回報機器人，因為已經退伍，所以發布出來給有需要的人使用。
+## 這是我在當兵期間寫的一個回報機器人，因為已經退伍剛好有時間整理，所以發布出來給有需要的人使用。
 
 這是一個基於 LINE Bot 的回報系統，專門用於國軍當兵時的各種回報，如休假、夜間回報等。<br>
 ![](readme_image/9.png)
@@ -6,23 +6,21 @@
 ## 功能特點
 
 ### 基本功能
-- 身份權限管理（一般/管理員）
-- 基於 Rich Menu 與 Flex Message 的選單系統
-- 自動化資料清理
+- 身份權限管理（一般/管理員），讓管理員可以使用額外的功能，詳見下方設定選單說明
+- 基於 Rich Menu 與 Flex Message 的選單系統，讓你不用再回想回報格式，直接點擊選項即可獲得回報範例
+- 自動化資料清理，讓你不用再手動清除已回報的資料，機器人將會在到點時自動清除
 <br>
 
-### 回報項目
+### 可回報項目
 - 休假回報（夜間回報）
 - 專車回報
 - 休假規劃 
 - 收假回報
 <br>
 
-### 管理功能
+### 輸出回報項目
 - 未回報人員查詢
-- 已回報統計
-- 專車統計
-- 管理員設定
+- 已回報內容統計
 <br>
 
 ## 系統架構
@@ -71,8 +69,11 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 編輯 .env 檔案並填入以下資訊：<br>
-- CHANNEL_SECRET：LINE Bot 的 Channel Secret<br>
-- CHANNEL_ACCESS_TOKEN：LINE Bot 的 Channel Access Token<br>
+```
+CHANNEL_SECRET：LINE Bot 的 Channel Secret
+CHANNEL_ACCESS_TOKEN：LINE Bot 的 Channel Access Token
+```
+※ 取得方式可參考 [LINE Bot SDK](https://developers.line.biz/en/docs/messaging-api/getting-started/)
 
 4. 設定 Webhook
 在 [LINE Bot Console](https://developers.line.biz/console) 中，將 Webhook URL 設定為 `http://your-domain:5000/callback`<br>
@@ -136,6 +137,7 @@ python bot_async.py
 <br>
 
 ### 設定選單說明
+※ 此項僅管理員權限可使用<br>
 1. 設定班級：設定目前機器人管理的班級，用於後續產生輸出回報<br>
 ![](readme_image/6.png)
 
